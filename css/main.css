@@ -1,0 +1,657 @@
+/*==================================================
+                common css start
+==================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+ol,
+ul {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 38px;
+  text-align: center;
+  color: #f3b969;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 50px; }
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize; }
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif; }
+
+.m-link {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #f3b969;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 20px;
+  overflow: hidden;
+  border-radius: 30px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: all linear 0.4s 0s;
+  -moz-transition: all linear 0.4s 0s;
+  -o-transition: all linear 0.4s 0s;
+  transition: all linear 0.4s 0s; }
+  .m-link i {
+    margin-left: 5px; }
+  .m-link:hover {
+    color: white;
+    border: 1px solid #f3b969; }
+  .m-link::after {
+    position: absolute;
+    content: '';
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #f3b969;
+    border-radius: 30px;
+    z-index: -1;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s; }
+  .m-link:hover:after {
+    top: 0;
+    left: 0; }
+
+.m-link2 {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid white;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 30px;
+  overflow: hidden;
+  border-radius: 30px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: all linear 0.4s 0s;
+  -moz-transition: all linear 0.4s 0s;
+  -o-transition: all linear 0.4s 0s;
+  transition: all linear 0.4s 0s; }
+  .m-link2 i {
+    margin-left: 5px; }
+  .m-link2:hover {
+    color: white;
+    border: 1px solid #f3b969; }
+  .m-link2::after {
+    position: absolute;
+    content: '';
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #f3b969;
+    border-radius: 30px;
+    z-index: -1;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s; }
+  .m-link2:hover:after {
+    top: 0;
+    left: 0; }
+
+.p120 {
+  padding: 120px 0; }
+
+/*==================================================
+                common css ends
+==================================================*/
+/*==================================================
+                navbar part start
+==================================================*/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    -webkit-transition: all linear 0.3s 0s;
+    -moz-transition: all linear 0.3s 0s;
+    -o-transition: all linear 0.3s 0s;
+    transition: all linear 0.3s 0s; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #f3b969; }
+
+/*==================================================
+                navbar part start
+==================================================*/
+/*==================================================
+                banner part start
+==================================================*/
+#banner {
+  background: url("../images/banner/banner.jpg") no-repeat center;
+  background-size: cover; }
+  #banner .bnr-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 215px 0; }
+    #banner .bnr-overlay .bnr-content h4 {
+      font-size: 24px;
+      color: white;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: capitalize; }
+    #banner .bnr-overlay .bnr-content h1 {
+      font-size: 50px;
+      color: white;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      padding: 25px 0; }
+      #banner .bnr-overlay .bnr-content h1 span {
+        color: #f3b969; }
+    #banner .bnr-overlay .bnr-content p {
+      color: white;
+      line-height: 28px;
+      font-weight: 600;
+      padding: 0 20px 35px; }
+    #banner .bnr-overlay .bnr-content ul li {
+      display: inline-block;
+      padding: 0 5px; }
+
+/*==================================================
+                banner part ends
+==================================================*/
+/*==================================================
+                about part start
+==================================================*/
+#about {
+  background: #f3f6fb; }
+  #about .nav-pills .nav-link {
+    color: #f3b969;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    line-height: 55px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    -webkit-transition: all linear 0.3s 0s;
+    -moz-transition: all linear 0.3s 0s;
+    -o-transition: all linear 0.3s 0s;
+    transition: all linear 0.3s 0s; }
+    #about .nav-pills .nav-link:hover {
+      color: white;
+      background: #f3b969; }
+  #about .nav-pills .active {
+    color: white;
+    background: #f3b969; }
+  #about .abt-content h3 {
+    color: #212529;
+    text-transform: uppercase; }
+  #about .abt-content h4 {
+    color: #f3b969;
+    padding-bottom: 30px; }
+  #about .abt-content .profile-content h3 {
+    padding-bottom: 15px; }
+  #about .abt-content .profile-content h4 {
+    padding-bottom: 30px; }
+  #about .abt-content .profile-content p {
+    padding-bottom: 15px; }
+  #about .abt-content .profile-content .m-link2 {
+    color: #3d3f42;
+    border: 1px solid #3d3f42;
+    margin-top: 10px; }
+    #about .abt-content .profile-content .m-link2:hover {
+      border: 1px solid #f3b969; }
+  #about .abt-content .profile-content ul {
+    padding-top: 35px; }
+    #about .abt-content .profile-content ul li {
+      display: inline-block; }
+      #about .abt-content .profile-content ul li i {
+        font-size: 20px;
+        color: #3d3f42;
+        line-height: 35px;
+        width: 35px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid #3d3f42;
+        border-radius: 50%;
+        -webkit-transition: all linear 0.4s 0s;
+        -moz-transition: all linear 0.4s 0s;
+        -o-transition: all linear 0.4s 0s;
+        transition: all linear 0.4s 0s;
+        margin: 0 5px; }
+        #about .abt-content .profile-content ul li i:hover {
+          color: #f3b969;
+          border: 1px solid #f3b969; }
+  #about .abt-content .contact-content h3 {
+    padding-bottom: 15px; }
+  #about .abt-content .contact-content h4 {
+    padding-bottom: 30px; }
+  #about .abt-content .contact-content p {
+    padding-bottom: 20px; }
+  #about .abt-content .contact-content ul li {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    padding: 15px 0; }
+    #about .abt-content .contact-content ul li a {
+      color: #212529; }
+    #about .abt-content .contact-content ul li i {
+      font-size: 20px;
+      color: white;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      background: #f3b969;
+      border-radius: 50%;
+      margin-right: 5px; }
+  #about .abt-content .skill-content h3 {
+    padding-bottom: 15px; }
+  #about .abt-content .skill-content h4 {
+    padding-bottom: 35px; }
+  #about .abt-content .skill-content h5 {
+    font-size: 16px;
+    color: #3d3f42;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; }
+  #about .abt-content .skill-content ul {
+    padding-top: 15px; }
+    #about .abt-content .skill-content ul li {
+      padding-right: 40px;
+      display: inline-block; }
+
+/*==================================================
+                about part start
+==================================================*/
+/*==================================================
+                service part start
+==================================================*/
+#service {
+  background: #262623; }
+  #service .s-item {
+    border: 1px solid #575152;
+    padding: 35px 0px 30px 0;
+    margin-bottom: 30px;
+    -webkit-transition: all linear 0.2s 0s;
+    -moz-transition: all linear 0.2s 0s;
+    -o-transition: all linear 0.2s 0s;
+    transition: all linear 0.2s 0s; }
+    #service .s-item h3 {
+      color: white;
+      padding-top: 25px;
+      padding-bottom: 15px; }
+    #service .s-item i {
+      color: #f3b969;
+      font-size: 40px;
+      line-height: 80px;
+      text-align: center;
+      width: 80px;
+      display: inline-block;
+      background: #f3f6fb;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      -webkit-transition: all linear 0.4s 0s;
+      -moz-transition: all linear 0.4s 0s;
+      -o-transition: all linear 0.4s 0s;
+      transition: all linear 0.4s 0s; }
+    #service .s-item p {
+      color: #b3b3b3;
+      font-size: 16px;
+      padding: 0 20px; }
+    #service .s-item:hover {
+      box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.733);
+      margin-top: -5px; }
+    #service .s-item:hover i {
+      border-radius: 50%; }
+    #service .s-item .m-link {
+      line-height: 40px;
+      margin-top: 25px;
+      border: none; }
+
+/*==================================================
+                service part ends
+==================================================*/
+/*==================================================
+                tesimoniasls part ends
+==================================================*/
+#testimonials {
+  background: #f3f6fb;
+  padding-bottom: 170px; }
+  #testimonials .client-head {
+    text-align: center; }
+    #testimonials .client-head h2 {
+      padding-bottom: 35px; }
+    #testimonials .client-head span {
+      color: #42423e; }
+  #testimonials figure {
+    border: 1px solid #f3f6fb;
+    position: relative;
+    margin: 25px 15px 30px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+    -webkit-transition: all linear 0.3s 0s;
+    -moz-transition: all linear 0.3s 0s;
+    -o-transition: all linear 0.3s 0s;
+    transition: all linear 0.3s 0s; }
+    #testimonials figure:hover {
+      box-shadow: 0 0 10px #212529;
+      margin-top: 15px; }
+    #testimonials figure .client-img {
+      height: 150px;
+      width: 150px;
+      padding: 1px;
+      position: absolute;
+      top: -20px;
+      left: 35px;
+      overflow: hidden; }
+      #testimonials figure .client-img img {
+        -webkit-transition: all linear 0.3s 0s;
+        -moz-transition: all linear 0.3s 0s;
+        -o-transition: all linear 0.3s 0s;
+        transition: all linear 0.3s 0s; }
+    #testimonials figure:hover .client-img img {
+      transform: scale(1.1); }
+    #testimonials figure figcaption {
+      padding: 155px 20px 10px 20px; }
+      #testimonials figure figcaption p {
+        color: #3d3f42;
+        font-size: 16px;
+        font-weight: 400; }
+      #testimonials figure figcaption address {
+        margin-top: 15px; }
+        #testimonials figure figcaption address p {
+          font-weight: 700; }
+        #testimonials figure figcaption address span {
+          color: #f3b969;
+          font-weight: 400; }
+  #testimonials .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%); }
+    #testimonials .slick-dots li {
+      display: inline-block; }
+      #testimonials .slick-dots li button {
+        height: 10px;
+        width: 30px;
+        font-size: 0;
+        background: #545454;
+        border: 0;
+        border-radius: 5px;
+        margin: 0 5px;
+        -webkit-transition: all linear 0.3s 0s;
+        -moz-transition: all linear 0.3s 0s;
+        -o-transition: all linear 0.3s 0s;
+        transition: all linear 0.3s 0s; }
+    #testimonials .slick-dots .slick-active button {
+      background: #f3b969;
+      width: 40px; }
+
+/*==================================================
+                testimonials part ends
+==================================================*/
+/*==================================================
+                portfolio part ends
+==================================================*/
+#portfolio {
+  background: #262623; }
+  #portfolio .port-content .port-nav {
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    margin-bottom: 20px; }
+    #portfolio .port-content .port-nav button {
+      font-size: 14px;
+      color: white;
+      line-height: 30px;
+      padding: 0 20px;
+      background: none;
+      border: 1px solid white;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+      margin: 0 10px;
+      cursor: pointer; }
+    #portfolio .port-content .port-nav .mixitup-control-active {
+      background: #f3b969;
+      color: white;
+      border: 1px solid #f3b969; }
+  #portfolio .port-content .port-item {
+    margin-top: 30px;
+    position: relative; }
+    #portfolio .port-content .port-item .port-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.698);
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all linear 0.3s 0s;
+      -moz-transition: all linear 0.3s 0s;
+      -o-transition: all linear 0.3s 0s;
+      transition: all linear 0.3s 0s; }
+      #portfolio .port-content .port-item .port-overlay h4 {
+        color: #f3b969;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        -webkit-transition: all linear 0.3s 0.2s;
+        -moz-transition: all linear 0.3s 0.2s;
+        -o-transition: all linear 0.3s 0.2s;
+        transition: all linear 0.3s 0.2s;
+        opacity: 0; }
+      #portfolio .port-content .port-item .port-overlay p {
+        color: white;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transition: all linear 0.3s 0.2s;
+        -moz-transition: all linear 0.3s 0.2s;
+        -o-transition: all linear 0.3s 0.2s;
+        transition: all linear 0.3s 0.2s;
+        opacity: 0; }
+    #portfolio .port-content .port-item:hover .port-overlay {
+      opacity: 1; }
+    #portfolio .port-content .port-item:hover h4 {
+      top: 38%;
+      opacity: 1; }
+    #portfolio .port-content .port-item:hover p {
+      bottom: 38%;
+      opacity: 1; }
+
+/*==================================================
+                portfolio part ends
+==================================================*/
+/*==================================================
+                oure team part start
+==================================================*/
+#team {
+  background: #f3f6fb;
+  padding-bottom: 170px; }
+  #team .team-head {
+    text-align: center; }
+    #team .team-head h2 {
+      padding-bottom: 35px; }
+    #team .team-head span {
+      color: #42423e; }
+  #team .team-info .team-member .draggable {
+    padding-top: 15px; }
+    #team .team-info .team-member .draggable figure {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+      margin: 0 15px;
+      -webkit-transition: all linear 0.3s 0s;
+      -moz-transition: all linear 0.3s 0s;
+      -o-transition: all linear 0.3s 0s;
+      transition: all linear 0.3s 0s; }
+      #team .team-info .team-member .draggable figure:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.301);
+        margin-top: -5px; }
+      #team .team-info .team-member .draggable figure .team-img {
+        position: relative;
+        overflow: hidden; }
+        #team .team-info .team-member .draggable figure .team-img img {
+          width: 100%;
+          -webkit-transition: all linear 0.4s 0s;
+          -moz-transition: all linear 0.4s 0s;
+          -o-transition: all linear 0.4s 0s;
+          transition: all linear 0.4s 0s; }
+        #team .team-info .team-member .draggable figure .team-img .team-overlay {
+          position: absolute;
+          height: 100%;
+          width: 20%;
+          top: 0;
+          right: -55px;
+          background: rgba(0, 0, 0, 0.582);
+          -webkit-transition: all linear 0.4s 0s;
+          -moz-transition: all linear 0.4s 0s;
+          -o-transition: all linear 0.4s 0s;
+          transition: all linear 0.4s 0s; }
+          #team .team-info .team-member .draggable figure .team-img .team-overlay ul li {
+            padding: 7.5px 0px;
+            text-align: center; }
+            #team .team-info .team-member .draggable figure .team-img .team-overlay ul li i {
+              font-size: 20px;
+              color: white;
+              line-height: 35px;
+              width: 35px;
+              text-align: center;
+              display: inline-block;
+              border: 1px solid white;
+              border-radius: 50%;
+              -webkit-transition: all linear 0.4s 0s;
+              -moz-transition: all linear 0.4s 0s;
+              -o-transition: all linear 0.4s 0s;
+              transition: all linear 0.4s 0s;
+              margin: 0 5px; }
+              #team .team-info .team-member .draggable figure .team-img .team-overlay ul li i:hover {
+                color: #f3b969;
+                border: 1px solid #f3b969; }
+      #team .team-info .team-member .draggable figure address {
+        padding: 0 20px; }
+        #team .team-info .team-member .draggable figure address h3 {
+          color: #f3b969;
+          padding-top: 25px; }
+      #team .team-info .team-member .draggable figure:hover .team-overlay {
+        right: 0; }
+      #team .team-info .team-member .draggable figure:hover img {
+        transform: scale(1.1); }
+  #team .slick-dots {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%); }
+    #team .slick-dots li {
+      display: inline-block; }
+      #team .slick-dots li button {
+        height: 10px;
+        width: 30px;
+        font-size: 0;
+        background: #545454;
+        border: 0;
+        border-radius: 5px;
+        margin: 0 5px;
+        -webkit-transition: all linear 0.3s 0s;
+        -moz-transition: all linear 0.3s 0s;
+        -o-transition: all linear 0.3s 0s;
+        transition: all linear 0.3s 0s; }
+    #team .slick-dots .slick-active button {
+      background: #f3b969;
+      width: 40px; }
+
+/*==================================================
+                our team part ends
+==================================================*/
+/*==================================================
+                blog part start
+==================================================*/
+#blog .blog-item {
+  margin-top: 35px; }
+  #blog .blog-item figure {
+    background: #fafafa; }
+    #blog .blog-item figure .blog-img {
+      overflow: hidden; }
+      #blog .blog-item figure .blog-img img {
+        -webkit-transition: all linear 0.3s 0s;
+        -moz-transition: all linear 0.3s 0s;
+        -o-transition: all linear 0.3s 0s;
+        transition: all linear 0.3s 0s; }
+    #blog .blog-item figure:hover .blog-img img {
+      transform: scale(1.1); }
+    #blog .blog-item figure figcaption {
+      padding: 30px 22px 45px 22px; }
+      #blog .blog-item figure figcaption h3 {
+        padding-bottom: 10px; }
+      #blog .blog-item figure figcaption p {
+        text-align: justify;
+        padding-top: 5px; }
+        #blog .blog-item figure figcaption p i {
+          color: #f3b969;
+          margin-right: 5px; }
+      #blog .blog-item figure figcaption .m-link {
+        color: #f3b969;
+        margin-top: 25px;
+        border: 1px solid #f3b969; }
+        #blog .blog-item figure figcaption .m-link:hover {
+          color: white; }
+
+/*==================================================
+                blog part ends
+==================================================*/
+/*==================================================
+                portfolio part ends
+==================================================*/
+/*==================================================
+                portfolio part ends
+==================================================*/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,393 @@
+
+
+
+@media (min-width:768px) and (max-width:991px){
+
+
+    .navbar{
+        background: rgba(0, 0, 0, 0.918);
+        padding: 10px !important;
+        z-index: 999;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link {
+        line-height: 50px;
+        text-align: center;
+    }
+    .navbar .navbar-nav {
+        background: rgba(0, 0, 0, 0.918);
+        z-index: 999;
+    }
+    .navbar .navbar-toggler{
+        border: 1px solid white;
+    }
+    .navbar .navbar-toggler i{
+        font-size:26px;
+        color:white;
+        
+    }
+
+    .nav-fixed{
+        padding: 10px !important;
+        background: rgba(0, 0, 0, 0.918);
+        z-index:999;
+    }
+    .nav-fixed .navbar-nav .nav-item .nav-link {
+        line-height: 50px !important;
+        text-align: center;
+    }
+
+#about .abt-content{
+    padding-top:60px;
+}
+
+
+
+
+#portfolio .port-content .port-nav button {
+    padding: 0 18px;
+    margin: 0 5px;
+}
+
+
+#team .team-info .team-member .draggable figure .team-img .team-overlay {
+    right:-70px;
+}
+#team .team-info .team-member .draggable figure:hover .team-img .team-overlay {
+    right:0px;
+}
+
+}
+
+@media(min-width:576px) and (max-width:767px){
+    h2{
+        padding-bottom: 35px;
+    }
+    h3{
+        font-size:24px;
+    }
+    h4{
+        font-size:20px;
+    }
+    p{
+        line-height: 24px;
+    }
+    .p120{
+        padding: 60px 0px;
+    }
+    .navbar{
+        padding: 10px !important;
+        background: rgba(0, 0, 0, 0.918);
+        z-index:999;
+    }
+    .navbar .navbar-toggler i{
+        font-size:26px;
+        color:white;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        text-align:center;
+        line-height:35px !important;
+    }
+
+
+    #banner .bnr-overlay{
+        padding:115px 0px 45px 0px;
+    }
+    #banner .bnr-overlay .bnr-content h4{
+        font-size:24px;
+        line-height:32px;
+    }
+    #banner .bnr-overlay .bnr-content h1{
+        font-size:38px;
+        padding:15px;
+        line-height:40px
+    }
+    #banner .bnr-overlay .bnr-content p{
+        line-height:26px;
+       padding: 0px 20px 25px 20px;
+    }
+    #banner .bnr-overlay .m-link2{
+        line-height: 40px;
+        padding: 0 22px;
+    }
+
+    #about .nav-pills .nav-link {
+        line-height: 40px;
+    }
+    #about .abt-menu{
+        padding-bottom:30px;
+    }
+    #about .profile-img img{
+    height: 200px;
+    float: right;
+}
+#about .abt-content .profile-content h4{
+    padding-bottom:15px;
+}
+#about .abt-content .profile-content h3{
+    padding-bottom:5px;
+}
+#about .abt-content .profile-content p {
+	padding-bottom: 10px;
+}
+#about .abt-content .profile-content ul {
+	padding-top: 24px;
+}
+#about .abt-content .skill-content h4 {
+	padding-bottom: 15px;
+}
+#about .abt-content .skill-content ul {
+	margin-bottom: -10px;
+}
+#about .abt-content .contact-content h3 {
+	padding-bottom: 5px;
+}
+#about .abt-content .profile-content h4 {
+	padding-bottom: 15px;
+}
+#about .abt-content .contact-content ul{
+    margin-bottom:-10px;
+}
+#about .abt-content .contact-content ul li {
+	padding: 10px 0;
+}
+#about .abt-content .contact-content p {
+	padding-bottom: 10px;
+}
+
+
+
+#testimonials .slick-dots {	
+	bottom: -20px;
+}
+
+
+#service .s-item .m-link {
+	margin-top: 20px;
+}
+#service .s-item-b{
+    margin-bottom:0px;
+}
+
+#testimonials{
+    padding-bottom:80px;
+}
+#portfolio .port-content .port-nav .bt{
+    margin-top: 20px;
+}
+
+
+#portfolio .port-content .port-item:hover h4 {
+	top: 39%;
+	opacity: 1;
+}
+#portfolio .port-content .port-item:hover p {
+	bottom: 39%;
+	opacity: 1;
+}
+
+#team {
+	padding-bottom: 110px;
+}
+#team .team-head h2 {
+	padding-bottom: 20px;
+}
+#team .slick-dots {
+	bottom: -50px;
+}
+#team .team-info .team-member .draggable figure address h3 {
+	padding-top: 15px;
+}
+#blog h2 {
+	padding-bottom: 40px;
+}
+#blog .blog-item figure figcaption .m-link {
+	margin-top: 20px;
+}
+
+#blog .blog-item figure .blog-img img {
+	width: 100%;
+}
+#blog .blog-item figure figcaption {
+	padding: 15px 22px 30px 22px;
+}
+
+#contact .contact-bg .contact-overlay {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+
+
+}
+@media(min-width:320px) and (max-width:575px){
+    h2{
+        padding-bottom: 35px;
+    }
+    h3{
+        font-size:24px;
+    }
+    h4{
+        font-size:20px;
+    }
+    p{
+        line-height: 24px;
+    }
+    .p120{
+        padding: 60px 0px;
+    }
+    .navbar{
+        padding: 10px !important;
+        background: rgba(0, 0, 0, 0.918);
+        z-index:999;
+    }
+    .navbar .navbar-toggler i{
+        font-size:26px;
+        color:white;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        text-align:center;
+        line-height:35px !important;
+    }
+
+
+    #banner .bnr-overlay{
+        padding:115px 0px 45px 0px;
+    }
+    #banner .bnr-overlay .bnr-content h4{
+        font-size:24px;
+        line-height:32px;
+    }
+    #banner .bnr-overlay .bnr-content h1{
+        font-size:38px;
+        padding:15px;
+        line-height:40px
+    }
+    #banner .bnr-overlay .bnr-content p{
+        line-height:26px;
+       padding: 0px 20px 25px 20px;
+    }
+    #banner .bnr-overlay .m-link2{
+        line-height: 40px;
+        padding: 0 22px;
+    }
+    #banner .bnr-overlay .smoll-d{
+        margin-top: 10px;
+    }
+    #about .nav-pills .nav-link {
+        line-height: 40px;
+    }
+    #about .abt-menu{
+        padding-bottom:30px;
+    }
+    #about .sd{
+    display: none;
+}
+#about .abt-content .profile-content h4{
+    padding-bottom:15px;
+}
+#about .abt-content .profile-content h3{
+    padding-bottom:5px;
+}
+#about .abt-content .profile-content p {
+	padding-bottom: 10px;
+}
+#about .abt-content .profile-content ul {
+	padding-top: 24px;
+}
+#about .abt-content .skill-content h4 {
+	padding-bottom: 15px;
+}
+#about .abt-content .skill-content ul {
+	margin-bottom: -10px;
+}
+#about .abt-content .contact-content h3 {
+	padding-bottom: 5px;
+}
+#about .abt-content .profile-content h4 {
+	padding-bottom: 15px;
+}
+#about .abt-content .contact-content ul{
+    margin-bottom:-10px;
+}
+#about .abt-content .contact-content ul li {
+	padding: 10px 0;
+}
+#about .abt-content .contact-content p {
+	padding-bottom: 10px;
+}
+
+
+
+#testimonials .slick-dots {	
+	bottom: -20px;
+}
+
+
+#service .s-item .m-link {
+	margin-top: 20px;
+}
+#service .s-item-b{
+    margin-bottom:0px;
+}
+
+#testimonials{
+    padding-bottom:80px;
+}
+#portfolio .port-content .port-nav .bt{
+    margin-top: 20px;
+}
+#portfolio .port-content .port-nav .sdb{
+    margin-top: 20px;
+}
+
+
+#portfolio .port-content .port-item:hover h4 {
+	top: 39%;
+	opacity: 1;
+}
+#portfolio .port-content .port-item:hover p {
+	bottom: 39%;
+	opacity: 1;
+}
+
+#team {
+	padding-bottom: 110px;
+}
+#team .team-head h2 {
+	padding-bottom: 20px;
+}
+#team .slick-dots {
+	bottom: -50px;
+}
+#team .team-info .team-member .draggable figure .team-img .team-overlay {
+    right:-120px;
+}
+#team .team-info .team-member .draggable figure:hover .team-img .team-overlay {
+    right:0px;
+}
+#team .team-info .team-member .draggable figure address h3 {
+	padding-top: 15px;
+}
+#blog h2 {
+	padding-bottom: 40px;
+}
+#blog .blog-item figure figcaption .m-link {
+	margin-top: 20px;
+}
+
+#blog .blog-item figure .blog-img img {
+	width: 100%;
+}
+#blog .blog-item figure figcaption {
+	padding: 15px 22px 30px 22px;
+}
+
+#contact .contact-bg .contact-overlay {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+
+
+}

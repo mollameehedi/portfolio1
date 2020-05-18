@@ -1,0 +1,1032 @@
+
+/*==================================================
+                common css start
+==================================================*/
+
+$main: #f3b969;
+$white: white;
+$bgwhite:#f3f6fb;
+$bgblack:#262623;
+$black3: #3d3f42;
+$black2: #212529;
+@mixin trans($time, $del) {
+    -webkit-transition: all linear $time $del;
+    -moz-transition: all linear $time $del;
+    -o-transition: all linear $time $del;
+    transition: all linear $time $del;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+ol,
+ul {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 38px;
+    text-align: center;
+    color: $main;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+.m-link {
+    color: $white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid $main;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 20px;
+    overflow: hidden;
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    @include trans(0.4s,0s);
+    i {
+        margin-left: 5px;
+    }
+    &:hover {
+        color: $white;
+        border: 1px solid $main;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $main;
+        border-radius: 30px;
+        z-index: -1;
+        @include trans(0.4s,0s);
+    }
+    &:hover:after {
+        top: 0;
+        left: 0;
+    }
+}
+.m-link2 {
+    color: $white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 30px;
+    overflow: hidden;
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    @include trans(0.4s,0s);
+    i {
+        margin-left: 5px;
+    }
+    &:hover {
+        color: $white;
+        border: 1px solid $main;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $main;
+        border-radius: 30px;
+        z-index: -1;
+        @include trans(0.4s,0s);
+    }
+    &:hover:after {
+        top: 0;
+        left: 0;
+    }
+}
+.p120 {
+    padding: 120px 0;
+}
+/*==================================================
+                common css ends
+==================================================*/
+
+
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fcfefc url(../images/preloader.gif) no-repeat center center;
+  }
+  
+
+
+
+/*==================================================
+                navbar part start
+==================================================*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .navbar-brand{
+        font-size:27px;
+        color:$main;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
+        text-transform: capitalize;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $white;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Nunito', sans-serif;
+                line-height: 75px;
+                text-transform: uppercase;
+                padding: 0 15px;
+                @include trans(0.3s,0s);
+                &:hover {
+                    color: $main;
+                }
+            }
+            .active{
+                color:$main;
+            }
+        }
+    }
+}
+
+
+.nav-fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: rgba(0, 0, 0, 0.818);
+    z-index:999;
+    .nav-item {
+        .nav-link {
+            line-height: 60px !important;
+        }
+    }
+}
+/*==================================================
+                navbar part start
+==================================================*/
+
+
+
+
+
+/*==================================================
+                banner part start
+==================================================*/
+#banner {
+    background: url("../images/banner/banner.jpg") no-repeat center;
+    background-size: cover;
+    .bnr-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 215px 0;
+        .bnr-content {
+            h4 {
+                font-size: 24px;
+                color: $white;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: capitalize;
+            }
+            h1 {
+                font-size: 50px;
+                color: $white;
+                font-weight: 700;
+                font-family: 'Nunito', sans-serif;
+                padding: 25px 0;
+                span {
+                    color: $main;
+                }
+            }
+            p {
+                color: $white;
+                line-height: 28px;
+                font-weight: 600;
+                padding: 0px 20px 25px 20px;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}
+/*==================================================
+                banner part ends
+==================================================*/
+
+
+
+
+
+/*==================================================
+                about part start
+==================================================*/
+#about {
+    background: $bgwhite;
+    .nav-pills{
+        .nav-link{
+            color: $main;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif;
+            line-height: 55px;
+            text-transform: uppercase;
+            padding: 0 15px;
+            @include trans(0.3s,0s);
+            i{
+                padding-right: 10px;
+            }
+            &:hover {
+                color: $white;
+                background: $main;
+            }
+        }
+        .active{
+            color:$white;
+            background: $main;
+        }
+    }
+    .abt-content {
+        h3 {
+            color: $black2;
+            text-transform: uppercase;
+        }
+        h4 {
+            color: $main;
+            padding-bottom: 30px;
+        }
+        .profile-content {
+            h3 {
+                padding-bottom: 15px;
+            }
+            h4 {
+                padding-bottom: 30px;
+            }
+            p {
+                padding-bottom: 15px;
+            }
+            .m-link2 {
+                color: $black3;
+                border: 1px solid $black3;
+                margin-top: 10px;
+                &:hover {
+                    border: 1px solid $main;
+                }
+            }
+            ul {
+                padding-top: 35px;
+                li {
+                    display: inline-block;
+                    i {
+                        font-size: 20px;
+                        color: $black3;
+                        line-height: 35px;
+                        width: 35px;
+                        text-align: center;
+                        display: inline-block;
+                        border: 1px solid $black3;
+                        border-radius: 50%;
+                        @include trans(0.4s,0s);
+                        margin: 0 5px;
+                        &:hover {
+                            color: $main;
+                            border: 1px solid $main;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-content {
+            h3 {
+                padding-bottom: 15px;
+            }
+            h4 {
+                padding-bottom: 30px;
+            }
+            p {
+                padding-bottom: 20px;
+            }
+            ul {
+                li {
+                    font-size: 20px;
+                    color: $black2;
+                    font-weight: 400;
+                    font-family: 'Nunito', sans-serif;
+                    padding: 15px 0;
+                    a {
+                        color: $black2;
+                    }
+                    i {
+                        font-size: 20px;
+                        color: $white;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        text-align: center;
+                        background: $main;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .skill-content {
+            h3 {
+                padding-bottom: 15px;
+            }
+            h4 {
+                padding-bottom: 35px;
+            }
+            h5{
+                font-size: 16px;
+                color:$black3;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+            }
+            ul {
+                padding-top: 15px;
+                li {
+                    padding-right: 40px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+/*==================================================
+                about part start
+==================================================*/
+
+
+
+
+
+/*==================================================
+                service part start
+==================================================*/
+#service{
+    background: $bgblack;
+    h2{
+        padding-bottom:40px;
+    }
+    .s-item{
+        border:1px solid #575152;
+        padding:35px 0px 30px 0;
+        margin-bottom: 30px;
+        @include trans(.2s,0s );
+        h3{
+            color:$white;
+            padding-top: 25px;
+            padding-bottom:15px;
+        }
+        i{
+            color:$main;
+            font-size: 40px;
+            line-height: 80px;
+            text-align: center;;
+            width:80px;
+            display:inline-block;
+            background: $bgwhite;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            @include trans(.4s,0s );
+        }
+        p{
+            color:#b3b3b3;
+            font-size:16px;
+            padding:0 20px;
+        }
+        &:hover{
+            box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.507);
+        margin-top: -5px;
+        }
+        &:hover i{
+            border-radius: 50%;
+        }
+        .m-link{
+            line-height: 40px;
+            margin-top: 25px;
+            border:1px solid $white;
+            &:hover{
+                border:1px solid $main;  
+            }
+        }
+    }
+}
+/*==================================================
+                service part ends
+==================================================*/
+
+
+
+
+
+/*==================================================
+                tesimoniasls part ends
+==================================================*/
+#testimonials{
+    background:$bgwhite;
+    .client-head{
+        text-align: center;
+        h2{
+            padding-bottom: 35px;
+        }
+        span{
+            color:#42423e;
+        }
+    }
+    figure{
+        border:1px solid $bgwhite;
+        position: relative;
+        margin: 25px 15px 30px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+        @include trans(.3s,0s );
+        &:hover{
+            box-shadow: 0 0 10px $black2;
+            margin-top: 15px;
+        }
+        .client-img{
+            height:150px;
+            width:150px;
+            padding: 1px;
+            position: absolute;
+            top: -20px;
+            left: 35px;
+            overflow: hidden;
+            img{
+                @include trans(.3s,0s );
+            }
+        }
+        &:hover .client-img img{
+            transform: scale(1.1);
+        }
+       figcaption{
+           padding: 155px 20px 10px 20px;
+           p{
+               color:$black3;
+               font-size:16px;
+               font-weight: 400;
+           }
+           address{
+               margin-top: 15px;
+               p{
+                   font-weight:700;
+               }
+               span{
+                   color:$main;
+                   font-weight: 400;
+               }
+           }
+       }
+   }
+   .slick-dots{
+    position: absolute;
+    bottom:-50px;
+    left:50%;
+    transform: translateX(-50%);
+    li{
+        display: inline-block;
+        button{
+            height:10px;
+            width:30px;
+            font-size:0;
+            background: #545454;
+            border: 0;
+            border-radius: 5px;
+            
+        margin: 0 5px;
+            @include trans(.3s,0s );
+        }
+    }
+    .slick-active button{
+        background: $main;
+        width:40px;
+    }
+}
+}
+/*==================================================
+                testimonials part ends
+==================================================*/
+
+
+
+
+
+
+/*==================================================
+                portfolio part ends
+==================================================*/
+#portfolio{
+    background: $bgblack;
+    .port-content{
+        .port-nav{
+            padding: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+            margin-bottom: 20px;
+            button{
+                font-size:14px;
+                color:$white;
+                line-height:30px;
+                padding:0 20px;
+                background: none;
+                border: 1px solid $white;
+                font-weight: 700;
+                font-family: 'Nunito', sans-serif;
+                text-transform: uppercase;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+            .mixitup-control-active{
+                background: $main;
+                color:$white;
+                border: 1px solid $main
+            }
+        }
+        .port-item{
+            margin-top: 30px;
+            position: relative;
+            .port-overlay{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width:100%;
+                background: rgba(0, 0, 0, 0.698);
+                text-align:center;
+                opacity: 0;
+                @include trans(.3s,0s );
+                h4{
+                    color:$main;
+                    position: absolute;
+                    top:0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    white-space:nowrap;
+                    @include trans(.3s,.2s );
+                    opacity:0;
+                }
+                p{
+                    color:$white;
+                    position: absolute;
+                    bottom:0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include trans(.3s,.2s );
+                    opacity:0;
+                }
+            }
+            &:hover .port-overlay{
+                opacity: 1;
+            }
+            &:hover h4{
+               top:38%;
+               opacity:1;
+            }
+            &:hover p{
+                bottom:38%;
+                opacity:1;
+            }
+        }
+    }
+}
+/*==================================================
+                portfolio part ends
+==================================================*/
+
+
+
+
+
+/*==================================================
+                oure team part start
+==================================================*/
+#team{
+    background:$bgwhite;
+    padding-bottom:170px;
+    .team-head{
+        text-align: center;
+        h2{
+            padding-bottom: 35px;
+        }
+        span{
+            color:#42423e;
+        }
+    }
+    .team-info{
+        .team-member{
+            .draggable{
+                padding-top:15px;
+                figure{
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+                    margin: 0 15px;
+                    @include trans(.3s,0s);
+                    &:hover{
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.301); 
+                        margin-top:-5px;
+                    }
+                    .team-img{
+                        position: relative;
+                        img{
+                            width:100%;
+                            @include trans(.4s,0s );
+                        }
+                        overflow: hidden;
+                        .team-overlay{
+                            position: absolute;
+                            height:100%;
+                            width:20%;
+                            top:0;
+                            right:-55px;
+                            background: rgba(0, 0, 0, 0.582);
+                            @include trans(.4s,0s );
+                            ul {
+                                li {
+                                    padding: 7.5px 0px;
+                                    text-align: center;
+                                    i {
+                                        font-size: 20px;
+                                        color: $white;
+                                        line-height: 35px;
+                                        width: 35px;
+                                        text-align: center;
+                                        display: inline-block;
+                                        border: 1px solid $white;
+                                        border-radius: 50%;
+                                        @include trans(0.4s,0s);
+                                        margin: 0 5px;
+                                        &:hover {
+                                            color: $main;
+                                            border: 1px solid $main;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    address{
+                        padding: 0 20px;
+                        h3{
+                            color:$main;
+                            padding-top: 25px;
+                        }
+                    }
+                    &:hover .team-overlay{
+                        right: 0;
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            
+            
+        }
+    }
+   .slick-dots{
+    position: absolute;
+    bottom:-80px;
+    left:50%;
+    transform: translateX(-50%);
+    li{
+        display: inline-block;
+        button{
+            height:10px;
+            width:30px;
+            font-size:0;
+            background: #545454;
+            border: 0;
+            border-radius: 5px;
+            
+        margin: 0 5px;
+            @include trans(.3s,0s );
+        }
+    }
+    .slick-active button{
+        background: $main;
+        width:40px;
+    }
+}
+}
+/*==================================================
+                our team part ends
+==================================================*/
+
+
+
+
+/*==================================================
+                blog part start
+==================================================*/
+#blog{
+    background: #262623;
+    padding-bottom: 105px;
+    .blog-item{
+        figure{
+            background: #262623;
+            border: 1px solid #575152;
+            @include trans(.4s,0s );
+            &:hover{
+                box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.507);
+                margin-top: -5px;
+            }
+            .blog-img{
+                overflow:hidden;
+                img{
+                    @include trans(.3s,0s );
+                }
+            }
+            &:hover .blog-img img{
+                transform: scale(1.1);
+            }
+            figcaption{
+                padding: 30px 22px 45px 22px;
+                h3{
+                    padding-bottom: 10px;
+                    color:$white;
+                }
+                p{
+                    text-align: justify;
+                    padding-top: 5px;
+                    color:$white;
+
+                    i{
+                        color:$main;
+                        margin-right: 5px;
+                    }
+                }
+                .m-link{
+                    color:$main;
+                    margin-top: 25px;
+                    border: 1px solid $main;
+                    &:hover{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}
+/*==================================================
+                blog part ends
+==================================================*/
+
+
+
+
+
+/*==================================================
+                contack part ends
+==================================================*/
+#contact{
+    background: $bgwhite;
+    .contact-bg{
+        background: url(../images/map_img.png) no-repeat center;
+        background-size:cover;
+        .contact-overlay{ 
+            padding-top:120px;
+            padding-bottom:90px;
+            .contact-head{
+                span{
+                    color:#42423e;
+                }
+            }
+            .contact-content{
+                address{
+                    ul{
+                        padding-bottom: 15px;
+                        li{
+                            font-size:16px;
+                            color:$black2;
+                            font-weight:400;
+                            font-family: 'Nunito', sans-serif;
+                            background:$bgwhite;
+                            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+                            padding:20px 0 20px 100px;
+                            box-sizing: border-box;
+                            position: relative;
+                            border-radius:5px;
+                            i{
+                                font-size:26px;
+                                color:$main;
+                                position: absolute;
+                                top:50%;
+                                left:20px;
+                                width: 60px;
+                                line-height:60px;
+                                text-align: center;
+                                border-radius:50%;
+                                background: $bgwhite;
+                                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+                                transform: translateY(-50%);
+                            }
+                            a{
+                                color:$black3;
+                                h4{
+                                    color:$black2;
+                                    padding-bottom:10px;
+                                }
+
+                            }
+                        }
+                        .mt-20{
+                            margin-top:20px;
+                        }
+                    }
+                }
+                .social{
+                    li{
+                        display: inline-block;                        
+                        a{
+                            i{
+                                font-size:18px;
+                                color:$black3;
+                                margin-right:30px;
+                                @include trans(.3s,0s );
+                                &:hover{
+                                    transform: rotateY(360deg);
+                                    color:$main;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            form{
+                .input{
+                    font-size:13px;
+                    color:$black3;
+                    line-height:45px;
+                    padding: 0 20px;
+                    background:$bgwhite;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 400;
+                    width:100%;
+                    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+                    border:0;
+                    margin-bottom: 20px;
+                    border-radius:5px;
+                }
+                textarea{
+                    color:#575152;
+                    border:1px;
+                    background:$bgwhite;
+                    padding:10px;
+                    height:115px;
+                    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+                    margin-bottom:20px;
+                    font-family: 'Nunito', sans-serif;
+                    width:100%;
+                    resize: none;
+                    border-radius:5px;
+                }
+                .submit{
+                    color:#575152;
+                    font-size:16px;
+                    font-weight: 500;
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform:uppercase;
+                    line-height:45px;
+                    border:0px;
+                    padding:0 50px;
+                    background:$bgwhite;
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.541);
+                    display: inline-block;
+                    border-radius:5px;
+                    cursor: pointer;
+                    @include trans(.4s,0s );
+                    position:relative;
+                    &:hover{
+                        color:$main;
+                        font-size:18px;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+                        padding:0 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*==================================================
+                portfolio part ends
+==================================================*/
+
+
+
+/*==================================================
+                footer part start
+==================================================*/
+footer{
+    background: #010101;
+    padding-top: 35px;
+    padding-bottom:25px;
+    .footer-logo{
+        font-size:27px;
+        color:$main;
+    }
+    p{
+        font-size:14px;
+        color:#737272;
+        a{
+            font-size: 14px;
+            color:$main; 
+            &:hover{
+                color:#737272;  
+            }
+        }
+    }
+}
+/*==================================================
+                footer part ends
+==================================================*/
+
+
+/*==================================================
+                back to  part start
+==================================================*/
+#back-to{
+    position:fixed;
+    bottom:35px;
+    right:35px;
+    font-size:20px;
+    color:$white;
+    background:$main;
+    text-align: center;
+    height:35px;
+    width:35px;
+    line-height:35px;
+    display:none;
+    z-index:999;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/*==================================================
+                back to part ends
+==================================================*/
+
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Montserrat', sans-serif;
